@@ -1,0 +1,10 @@
+{
+    "name": "BME280",
+    "version": "3.0.1_Bilk",
+    "description": "Fork of https://github.com/finitespace/BME280.git to repair compiler errors",
+    "frameworks": "Arduino",
+    "platforms": "espressif8266",
+    "build": {
+        "flags": "-DUSING_BRZO=1"
+    }
+}

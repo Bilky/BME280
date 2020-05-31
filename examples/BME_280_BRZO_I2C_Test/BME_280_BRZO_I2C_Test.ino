@@ -28,7 +28,7 @@ SCK (Serial Clock)  ->  D1 on ESP8266
 #include "Arduino.h"
 
 #include "brzo_i2c.h"
-#define USING_BRZO 1
+#define USING_BRZO 1  // It doesn't make sense here
 #include "BME280I2C_BRZO.h"
 
 #define SERIAL_BAUD 115200

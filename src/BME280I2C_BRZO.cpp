@@ -33,7 +33,11 @@ courtesy of Brian McNoldy at http://andrew.rsmas.miami.edu.
 
 #include "BME280I2C_BRZO.h"
 
-#ifdef USING_BRZO
+#ifdef USING_BRZO           // tell your library builder to set a "#define USING_BRZO = 1"
+                            // for PlatformIO -> in platformio.ini: 
+                            //    build_flags = -DUSING_BRZO=1
+                            // Arduino IDE -> in platform.local.txt: 
+                            //    compiler.cpp.extra_flags=-DUSING_BRZO=1 ????
 
 #include "brzo_i2c.h"
 
@@ -94,4 +98,4 @@ bool BME280I2C_BRZO::ReadRegister
     return (brzo_i2c_end_transaction()==0);
 }
 
-#endif
+#endif  // USING_BRZO
