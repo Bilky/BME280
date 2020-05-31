@@ -1,6 +1,13 @@
 # BME280
 Provides an Arduino library for reading and interpreting Bosch BME280 data over I2C, SPI or Sw SPI. Additional environment calculation functions are provided. ESP and BRZO are now supported.
 
+## Fork to solve compiler errors
+The original library has been forked to fix known bugs in a timely manner. The fork is deleted as soon as the errors have been rectified.
+1. finitespace / BME280 / Issue # 85: compiler warning
+2. Pass on "#define USING_BRZO = 1" to the library builder
+
+The fix is tested for PlatfomIO, only intended for the Arduino IDE.
+
 ## Table of Contents
 
 1. [BME280](#bme280)
